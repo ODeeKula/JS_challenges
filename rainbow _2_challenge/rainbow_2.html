@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title></title>
+    <style media="screen">
+      div{
+        padding:20px;
+        margin-bottom: 30px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="red">Red</div>
+      <div id="orange">Orange</div>
+      <div id="yellow">Yellow</div>
+      <div id="green">Green</div>
+      <div id="blue">Blue</div>
+      <div id="indigo">Indigo</div>
+      <div id="violet">Violet</div>
+    </div>
+
+    <script>
+    var red = document.getElementById('red');
+    // red.innerHTML = "Red";
+    red.style.backgroundColor = "red";
+
+    var orange = document.getElementById('orange');
+    // orange.innerHTML = "Orange";
+    orange.style.backgroundColor = "orange";
+
+    var yellow = document.getElementById('yellow');
+    // yellow.innerHTML = "Yellow";
+    yellow.style.backgroundColor = "yellow";
+
+    var green = document.getElementById('green');
+    // green.innerHTML = "Green";
+    green.style.backgroundColor = "green";
+
+    var blue = document.getElementById('blue');
+    // blue.innerHTML = "Blue";
+    blue.style.backgroundColor = "blue";
+
+    var indigo = document.getElementById('indigo');
+    // indigo.innerHTML = "Indigo";
+    indigo.style.backgroundColor = "indigo";
+
+    var violet = document.getElementById('violet');
+    // violet.innerHTML = "Violet";
+    violet.style.backgroundColor = "violet";
+
+    var container = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    // ES6/ it doest't use the i value and uses let
+    for(let value of container){
+      document.write(value);
+    }
+
+    for(var i = 0; i < container.length; i++){
+      console.log(container[i]);
+    }
+    </script>
+  </body>
+</html>

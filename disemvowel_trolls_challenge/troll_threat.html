@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Troll Threat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button id="btn"></button>
+
+   <script>
+        function disemvowel(str) {
+            var splitStr = str.split('')
+            return splitStr.filter(function(e) {
+            return !(e == "a" || e == 'A' || e == 'e' || e == 'E' || e == 'i' || e == 'I' || e == 'o' || e == 'O' || e == 'u' || e == 'U')
+        }).join('')
+        }
+
+        disemvowel('HaPioupy moNdAyeaa!')
+
+        //Solution 2
+
+        function disemvowel(str){
+         return str.replace(/[aeiou]/ig, '')
+        }
+
+        disemvowel('HaPiou
+        py moNdAyeaa!')
+        
+   </script> 
+</body>
+</html>
